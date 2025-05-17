@@ -18,5 +18,5 @@ float(a)
 
 #input function 
 
-Name = input("Enter your Name: ")
+Name = int(input("Enter your Name: "))
 print(Name)
