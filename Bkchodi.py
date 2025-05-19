@@ -19,7 +19,7 @@
 # print("PNG Files",png)
 # print("JPG Files",jpg)
 
-
+# PROGRAM:-1
 # a = int(input("Enter your no:- "))
 # b = int(input("Enter your no:- "))
 # print('''Enter your choice
@@ -39,6 +39,9 @@
 #      print("Not defined")
 #     else:
 #      print(a/b)
+
+#PROGRAM:- 2
+
 # a = int(input("enter your maths marks: "))
 # b = int(input("enter your english marks: "))
 # c = int(input("enter your science marks: "))
