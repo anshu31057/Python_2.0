@@ -1,5 +1,6 @@
 #INDEXING IN LIST
 fruits = ["apples", "Bananna", "Watermelon"]
+()
 # #index       0         1           2 
 # #            -3        -2         -1
 # print(fruits[0])
@@ -9,10 +10,11 @@ fruits = ["apples", "Bananna", "Watermelon"]
 # print(fruits[0:2])  # print 0 and 1 not print 2 
 
 #LIST FUNCTION
+print("Hello\"World!!\"")
 
 fruits.append("Kiwi")
 print(fruits)
-fruits.insert(1,"Ramu")
+fruits.insert(4,"Ramu")
 print(fruits)
 fruits.remove("Ramu")
 print(fruits)
@@ -24,3 +26,4 @@ fruits.reverse()
 print(fruits)
 print(len(fruits))
 # tupples same h but unme change nhii kr skte ham log 
+

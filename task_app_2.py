@@ -20,8 +20,7 @@ elif a == 2:
     print("2.",tsk2)
     print("3.",tsk3)
     if tsk4 != "":
-        print("4.",tsk4)
-    
+        print("4.",tsk4) 
     usr_input = int(input(":"))
     if usr_input ==1:
         task.remove(tsk1)
