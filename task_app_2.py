@@ -50,11 +50,4 @@ elif len(task) == 4:
     print("2.", task[1])
     print("3.", task[2])
     print("4.", task[3])
-
 print("Length of list is:- ",len(task))
-
-
-
-
-
-

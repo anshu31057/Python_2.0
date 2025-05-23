@@ -1,5 +1,5 @@
-fruits = ["apples", "Bananna", "Watermelon"]
 #INDEXING IN LIST
+fruits = ["apples", "Bananna", "Watermelon"]
 # #index       0         1           2 
 # #            -3        -2         -1
 # print(fruits[0])
@@ -23,5 +23,4 @@ print(fruits)
 fruits.reverse()
 print(fruits)
 print(len(fruits))
-
 # tupples same h but unme change nhii kr skte ham log 
