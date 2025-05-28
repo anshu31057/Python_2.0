@@ -1,11 +1,13 @@
 contacts = {}
 while True:
     print("PHONE DIARY")
-    print('''1. Add
+    print(
+        """1. Add
 2. Search
 3. Delete
 4. View all
-5. Exit''')
+5. Exit"""
+    )
     print("---------------------------")
     print("Enter Your Choice Down")
     print("---------------------------")
@@ -18,28 +20,33 @@ while True:
                 break
             name = input("Enter Name: ")
             if name == 1234:
-             break
+                break
             contacts[name] = phone
             print("Contact Saved Successfully!!")
 
-    elif opt ==2:
-        print("Search By Name or Phone no.")
-        print('''1. Name
-                 2. Phone no.''')
-        a1 = int(input(": "))
-        if a1 == 1:
-            b1 = input("Enter Name: ")
-            print(":",contacts.get(b1))
-        elif a1 == 2:
-            b2 = input("Enter Number: ")
-            for key , values in contacts.items():
-                if values == b2:
-                    print(":",key)
-    elif opt ==3:
+    elif opt == 2:
+        while True:
+            print("Search By Name or Phone no.")
+            print(
+                """1. Name
+2. Phone no."""
+            )
+            a1 = int(input(": "))
+            if a1 == 1:
+                b1 = input("Enter Name: ")
+                if b1 == contacts:
+                    print(":", contacts.get(b1))
+            elif a1 == 2:
+                b2 = input("Enter Number: ")
+                for key, values in contacts.items():
+                    if values == b2:
+                        print(":", key)
+    elif opt == 3:
         a2 = input("Enter Name to delete:")
-        contacts.pop(a2,None)
+        contacts.pop(a2, None)
+        print("Deleted Successfullly!!")
     elif opt == 4:
-        for phone , name in contacts.items():
-            print(phone,":",name)
-    elif opt ==5:
+        for phone, name in contacts.items():
+            print(phone, ":", name)
+    elif opt == 5:
         break
