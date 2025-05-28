@@ -18,7 +18,7 @@ while True:
             phone = int(input("Enter Contact number: "))
             if phone == 1234:
                 break
-            name = input("Enter Name: ")
+            name = input("Enter Name: ").lower()
             if name == 1234:
                 break
             contacts[name] = phone
@@ -33,7 +33,7 @@ while True:
             )
             a1 = int(input(": "))
             if a1 == 1:
-                b1 = input("Enter Name: ")
+                b1 = input("Enter Name: ").lower()
                 if b1 == contacts:
                     print(":", contacts.get(b1))
             elif a1 == 2:
@@ -42,7 +42,7 @@ while True:
                     if values == b2:
                         print(":", key)
     elif opt == 3:
-        a2 = input("Enter Name to delete:")
+        a2 = input("Enter Name to delete:").lower()
         contacts.pop(a2, None)
         print("Deleted Successfullly!!")
     elif opt == 4:
