@@ -15,11 +15,11 @@ while True:
     if opt == 1:
         print("\nEnter 1234 to go back to main menu")
         while True:
-            phone = int(input("Enter Contact number: "))
-            if phone == 1234:
+            phone = input("Enter Contact number: ")
+            if phone == "1234":
                 break
             name = input("Enter Name: ").lower()
-            if name == 1234:
+            if name == "1234":
                 break
             contacts[name] = phone
             print("Contact Saved Successfully!!")
@@ -29,18 +29,23 @@ while True:
             print("Search By Name or Phone no.")
             print(
                 """1. Name
-2. Phone no."""
+2. Phone no.
+Enter 1234 to exit"""
             )
             a1 = int(input(": "))
             if a1 == 1:
                 b1 = input("Enter Name: ").lower()
-                if b1 == contacts:
+                if b1 in contacts:
                     print(":", contacts.get(b1))
+                else:
+                    print("Contact Not Found!!")
             elif a1 == 2:
                 b2 = input("Enter Number: ")
                 for key, values in contacts.items():
                     if values == b2:
                         print(":", key)
+            elif a1 ==1234:
+                break
     elif opt == 3:
         a2 = input("Enter Name to delete:").lower()
         contacts.pop(a2, None)
