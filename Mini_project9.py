@@ -52,6 +52,7 @@ Enter 1234 to exit"""
         print("Deleted Successfullly!!")
     elif opt == 4:
         for phone, name in contacts.items():
+            print("---------------------------")
             print(phone, ":", name)
     elif opt == 5:
         break
