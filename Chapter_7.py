@@ -19,8 +19,9 @@
 #     return x*x
 # sqr = square(5)
 # print(sqr)
-
+import os
 def guest_name(*guests , **details):
+    os.system("cls")
     print("Inviting Guests: ")
     for guest in guests:
         print("-",guest)
@@ -32,8 +33,8 @@ def guest_name(*guests , **details):
 guest_input = input("Enter Guests name(seprate with comma , ): ")
 guest_list = guest_input.split(",")
 
-details = input("Enter Venue: ")
+venue = input("Enter Venue: ")
 host = input("Enter host name: ")
 time = input("Enter Time: ")
 
-guest_name(*guest_list,details=details,host=host,time=time)
+guest_name(*guest_list,venue=venue,host=host,time=time)
