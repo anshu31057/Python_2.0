@@ -1,4 +1,6 @@
+import os
 def event(*people,**details):
+    os.system("cls")
     print("Invited Peoples Name:- ")
     for guest in people:
         print("-",guest)
