@@ -1,0 +1,9 @@
+
+------------------------------
+Student Name: Anshu
+Class       : 12th
+Maths       : 56
+Science     : 78
+English     : 67
+Total       : 201
+Percentage  : 67.0------------------------------
