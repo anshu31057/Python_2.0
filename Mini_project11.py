@@ -2,7 +2,7 @@ import os
 class Student:
     def __init__(self,name,grade,maths, science,english):
         self.name = name
-        self.grade = grade
+        self.grade = grade   
         self.maths=maths
         self.science = science
         self.english = english
