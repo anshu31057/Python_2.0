@@ -6,4 +6,5 @@ Maths       : 56
 Science     : 78
 English     : 67
 Total       : 201
-Percentage  : 67.0------------------------------
+Percentage  : 67.0
+------------------------------
